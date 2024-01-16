@@ -17,7 +17,7 @@ There is not a significant gate to any of these components since they're very ch
 
 ![Microcontroller Components](media/Microcontroller_Components.png?)
 
-Lastly, you need another computer in order to flash the EEPROM with the code for the bacterial vat. The only requirement for this additional computer is that OpenOS needs to be installed. A sample list of components is provided below if you are unfamiliar with Open Computers. Shift-click all of them into a computer case (except for the keyboard which should be placed on top and a screen that should be connected via cables). Power the computer by connecting it directly to any GT cable and follow the commands on screen ("install" --> "Y" --> "Y") to complete the setup.
+Lastly, you need another computer in order to flash the EEPROM with the code for the bacterial vat. The only requirement for this additional computer is that OpenOS needs to be installed. A sample list of components is provided below if you are unfamiliar with Open Computers. Shift-click all of them into the computer case (except for the keyboard which should be placed on top and a screen that should be connected via cables). Power the computer by connecting it directly to any GT cable and follow the commands on screen ("install" --> "Y" --> "Y") to complete the setup.
 
 - Tier 3 Computer Case
 - Tier 1.5 Memory
@@ -46,3 +46,6 @@ Lastly, you need another computer in order to flash the EEPROM with the code for
 The assembled microcontroller should be placed directly underneath the output hatch of the bacterial vat(s). The hatch can be any size so long as it there is enough room to hold all of the fluid from a single operation. Right-click the microcontroller to turn it on. Place a large fluid storage (or dual interface) underneath the microcontroller to store all of the output fluid. On one of the sides of the microcontroller, place a redstone timer set to the length of the recipe itself. If multiple setups are being used, it is recommended to have the redstone timer feed into either a redstone P2P tunnel or wireless redstone transmitter to output to all microcontrollers simultaneously. The redstone signal from the timer briefly turns on the microcontroller(s) which will first lower the output hatch to exactly half full and then output its own redstone signal to tell the bacterial vat(s) to turn on. Simply attach a machine controller cover set to ENABLE WITH REDSTONE to the bacterial vat(s) and run a red alloy wire to the sides of the microcontroller. The setup below controls four bacterial vats all sharing the same output hatch.
 
 ![setup](media/Setup.png?)
+
+# Acknowledgements
+The code for the microcontroller was originally authored by Sampsa and can be found here: https://github.com/S4mpsa/NIDAS/blob/master/modules/microcontrollers/biovat.lua
